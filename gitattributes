@@ -1,0 +1,50 @@
+# Handle line endings consistently
+* text=auto
+
+# Explicitly declare text files
+*.c      text
+*.cpp    text
+*.cs     text
+*.css    text
+*.html   text
+*.java   text
+*.js     text
+*.json   text
+*.md     text
+*.py     text
+*.sh     text eol=lf
+*.ts     text
+*.yml    text
+*.yaml   text
+
+# Mark Windows-specific files with CRLF
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+
+# Treat binary files as binary (no line ending conversion)
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary
+*.zip    binary
+*.gz     binary
+*.mp4    binary
+*.mov    binary
+*.exe    binary
+*.dll    binary
+
+# Prevent diff on binaries
+*.pdf    -diff
+*.png    -diff
+*.jpg    -diff
+*.jpeg   -diff
+*.gif    -diff
+*.ico    -diff
+*.zip    -diff
+*.gz     -diff
+*.mp4    -diff
+*.mov    -diff
+*.exe    -diff
+*.dll    -diff
